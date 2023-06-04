@@ -4,37 +4,32 @@
     {
         static void Main(string[] args)
         {
-            int number = Convert.ToInt32(Console.ReadLine());
-            while (number >=50 && number <= 70)
+
+
+            for (int i = 50; i < 70; i++)
             {
-                while (number != 1)
+                int number = 0;
+                number = i;
+
+                do
                 {
-
-
 
                     if (number % 2 == 0)
                     {
                         number /= 2;
-
                     }
                     else
                     {
                         number = ((number * 3) + 1) / 2;
+
                     }
-
-                    Console.WriteLine(number);
-
-
                 }
-                
-                
-                    
-                
-            }
-            
-            
-            
+                while (number != 1);
+                Console.WriteLine(number);
 
-        }
+            }
+        }      
+
+        
     }
 }
